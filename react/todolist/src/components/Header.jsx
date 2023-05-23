@@ -4,7 +4,7 @@ import TabButton from './TabButton';
 
 export default function Header() {
     return (
-        <div className='flex justify-between px-2'>
+        <div className='flex justify-between px-2 bg-slate-950 rounded-t-xl'>
             <DarkModeButton />
             <div>
             <TabButton value="All"/>
