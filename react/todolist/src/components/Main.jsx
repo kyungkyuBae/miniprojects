@@ -6,7 +6,8 @@ export default function Main() {
     return (
         <div className='px-3 py-3 bg-slate-700 h-64' >
             
-            <Todo action='오늘'/>
+            {todoList.map(todo=>
+                <Todo setTodoList={setTodoList} todoList={todoList} action={todo}/>)}
             
         </div>
     );
