@@ -10,7 +10,7 @@ function App() {
   }
   return (
   <>
-    <Header filters={filters} handleChangeFilter={handleChangeFilter} />
+    <Header filters={filters} filter={filter} onChangeFilter={handleChangeFilter} />
     <TodoList filter={filter}/>
   </> 
   );

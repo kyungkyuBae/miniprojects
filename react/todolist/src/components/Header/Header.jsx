@@ -1,13 +1,13 @@
 import React from 'react';
-
-export default function Header({filters,handleChangeFilter}) {
+import styles from './Header.module.css'
+export default function Header({filter,filters,onChangeFilter}) {
     return (
-        <header>
-            <ul>
+        <header className={styles.header}>
+            <ul className={styles.filters}>
                 {
-                    filters.map(filter=>
-                    <li>
-                        <button onClick={()=>{handleChangeFilter(filter)}}>{filter}</button>
+                    filters.map((value,index)=>
+                    <li key={index}>
+                        <button className={`${styles.filter} ${filter === value && styles.selected}`} onClick={()=>{onChangeFilter(value)}}>{value}</button>
                     </li>)
                 }
             </ul>
