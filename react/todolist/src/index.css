@@ -4,6 +4,7 @@
     --color-grey : #d1d1d1;
     --color-text : #22243b;
     --color-accent : #f16e03;
+    --color-white : white;
 
 }
 body {
@@ -15,6 +16,9 @@ body {
     font-size: 1.2rem;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,3,18,1) 35%, rgba(0,212,255,1) 100%);
+}
+*{
+    box-sizing: border-box;
 }
 
 
