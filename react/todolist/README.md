@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# todoList
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+<p align='center'><img src='./todoListMain.png' width=500; higth=500;></p>
 
-### `yarn start`
+# todoList의 기능
+1. 사용자의 input을 받아 todo를 출력하고, 원하는 todo를 delete 할 수 있음.
+2. checkbox를 통해 completed와 active한 todo만을 보여줄 수 있도록 함.
+3. 다크모드,라이트모드 구현
+4. 새로고침 하여도 기존의 todo와 다크모드의 상태를 받아옴.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# todoList를 만든계기와 느낀 점
+리액트를 학습하면서, 간단한 결과물을 만들며 리액트에 좀 더 익숙해지고 활용해보기 위해 todoList를 만들어 보았습니다.
+* todoList를 만들면서 배운점
+1. useState를 사용하여 배열이라는 상태를 업데이트하고 수정할 수 있음.
+2. 필터링하여 보여주고자 하는 item들만 보여줄 수 있음.
+3. useEffect와 localstorage를 통해 웹에 데이터를 저장하고, 불러올 수 있음.
+4. useContext를 사용하여 다크모드의 상태를 전달하고자 하는 컴포넌트에만 전달 할 수 있음.
+5. css 라이브러리인 post-css 를 사용하여 post-css 사용법을 학습함.
+# todoList를 만들면서 어렵거나 헷갈렸던 점
+* 좋은 변수,함수,컴포넌트의 네이밍은 무엇인가
+* 좋은 컴포넌트의 분리란 무엇인가
+* 어떤 hook을 사용하여 상태관리를 할것인지(최적화가 꼭 필요한지 여부)
+* 상태를 어느 컴포넌트에서 관리를 하는것이 좋은지
+# todoList를 만들면서 총평
+* 리액트뿐만 아니라 자바스크립트 웹 api, html 시맨틱 태그, css 라이브러리 등등 기존에 알고있다고 생각했던 부분들에 대해서  
+조금 더 알아가고 익숙해지는 계기가 되었음.
+* 다음프로젝트는 서버와 통신하여 데이터를 주고받을 수 있는 프로젝트를 만들어 보고 싶다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
